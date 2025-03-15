@@ -1,0 +1,48 @@
+.bi-star-fill {
+    color: gold;
+}
+
+.btn-outline-success {
+    margin-right: 10px;
+}
+
+.space-margin-right {
+    margin-right: 10px;
+}
+
+.bi-check-circle {
+    display: none;
+}
+
+.change-icon:hover .bi-circle {
+    display: none;
+}
+
+.change-icon:hover .bi-check-circle {
+    display: inline;
+}
+
+.cursor {
+    cursor: pointer;
+}
+
+.space {
+    margin-left: 5px;
+}
+
+.card:hover {
+    background-color: rgb(212, 212, 212);
+    color: rgb(99, 99, 99);
+}
+
+.decoration-text-complete {
+    text-decoration: line-through;
+}
+
+.color-icon-trash {
+    color: rgb(161, 0, 0);
+}
+
+.text-error {
+    color: rgb(161, 0, 0);
+}
