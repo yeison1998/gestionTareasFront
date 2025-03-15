@@ -16,6 +16,16 @@ Para ejecutar el proyecto, el cual se lanza en el puerto 4200 por defecto
 
 http://localhost:4200
 
+Para crear el build
+
+ng build --configuration production
+y para desplegar
+npx angular-cli-ghpages --dir=dist/gestion-tareas-front/browser
+
+URL app desplegada: https://yeison1998.github.io/gestionTareasFront/gestion-tareas
+URL peticiones back: https://apitareas-caf7b7fqgmg6dwf3.canadacentral-01.azurewebsites.net
+
+
 
 
 ## Development server
