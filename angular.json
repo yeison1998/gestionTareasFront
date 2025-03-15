@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "gestionTareas": {
+    "gestionTareasFront": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -17,7 +17,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:application",
           "options": {
-            "outputPath": "dist/gestion-tareas",
+            "outputPath": "dist/gestion-tareas-front",
             "index": "src/index.html",
             "browser": "src/main.ts",
             "polyfills": [
@@ -65,10 +65,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "gestionTareas:build:production"
+              "buildTarget": "gestionTareasFront:build:production"
             },
             "development": {
-              "buildTarget": "gestionTareas:build:development"
+              "buildTarget": "gestionTareasFront:build:development"
             }
           },
           "defaultConfiguration": "development"

@@ -18,8 +18,8 @@ export class TaskManagementService {
     return this.http.post<any>(`https://localhost:7213/api/Tasks`, task);
   }
 
-  updateTask(task: TaskManagement): Observable<{ message: string, data: TaskManagement }> {
-    return this.http.put<{ message: string, data: TaskManagement }>(`https://localhost:7213/api/Tasks/${task.id}`, task);
+  updateTask(task: TaskManagement): Observable<{message: string, data: TaskManagement}> {
+    return this.http.put<{message: string, data: TaskManagement}>(`https://localhost:7213/api/Tasks/${task.id}`, task);
   }
 
   deleteTask(id: number): Observable<any> {

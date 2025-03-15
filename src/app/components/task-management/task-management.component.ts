@@ -2,8 +2,8 @@ import { CommonModule } from '@angular/common';
 import { Component, inject, signal } from '@angular/core';
 import { AbstractControl, FormBuilder, FormGroup, ReactiveFormsModule, Validators } from '@angular/forms';
 import { TaskManagement } from '../interfaces/task-management';
-import { ToastrService } from 'ngx-toastr';
 import { TaskManagementService } from '../services/task-management.service';
+import { ToastrService } from 'ngx-toastr';
 
 @Component({
   selector: 'app-task-management',
@@ -13,6 +13,7 @@ import { TaskManagementService } from '../services/task-management.service';
   styleUrl: './task-management.component.scss'
 })
 export class TaskManagementComponent {
+
   tasks = signal<TaskManagement[]>([]);
   badgeCompleted = signal(0);
   badge = signal(0);
@@ -113,5 +114,4 @@ export class TaskManagementComponent {
   get description(): AbstractControl { return this.formTask.get('description')! }
   get isImportant(): AbstractControl { return this.formTask.get('isImportant')! }
   get isComplete(): AbstractControl { return this.formTask.get('isComplete')! }
-
 }
